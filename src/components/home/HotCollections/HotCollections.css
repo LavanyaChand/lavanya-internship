@@ -1,0 +1,56 @@
+/* Remove default slick-theme arrows so they don't overlap Font Awesome */
+
+.slider-container { position: relative; }
+
+/* Card look */
+.slider-item { 
+  padding: 0 7px; 
+  width: 100%;
+} 
+
+
+.slick-prev:before,
+.slick-next:before {
+  content: none !important;
+}
+
+/* arrow button */
+.custom-arrow {
+  position: absolute;
+  top: 52.5%;
+  /* transform: translateY(-50%);          */
+  z-index: 1;                      
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .15s ease;
+  /* will-change: transform;                */
+}
+
+.custom-arrow:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-50%) scale(1.06); 
+}
+
+.custom-arrow:hover,
+.custom-arrow:focus {
+  background: #fff !important;
+}
+
+
+.custom-arrow.slick-prev { left: -15px; }
+.custom-arrow.slick-next { right: -15px; }
+
+.custom-arrow svg {
+  color: #000;
+  font-size: 12px;
+  pointer-events: none;      
+}
+
+
