@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './HotCollections.css';
+// import '../../../css/styles/animate.css';
 import Skeleton from "../../UI/Skeleton";
 
 
@@ -79,7 +80,10 @@ const HotCollections = () => {
   return (
     <section id="section-collections" className="no-bottom position-relative">
       <div className="container">
-        <div className="row">
+        <div 
+          data-aos="custom-fadeIn"
+          className="row"
+        >
           <div className="col-lg-12 text-center">
             <h2>Hot Collections</h2>
             <div className="small-border bg-color-2"></div>

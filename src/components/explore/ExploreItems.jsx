@@ -183,7 +183,9 @@ const ExploreItems = () => {
 
       {/* Load More Button */}
       {visibleCount < exploreItem.length && (
-        <div className="col-md-12 text-center">
+        <div 
+          data-aos="custom-fadeUp"
+          className="col-md-12 text-center">
           <button
             onClick={handleLoadMore}
             id="loadmore"
